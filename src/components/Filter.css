@@ -10,11 +10,11 @@
     flex-direction: column;
     max-width: 15%;
     padding: 0px 20px 0px 20px;
-    border-right: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid rgb(255, 255, 255);
     height: 80vh;
     position: sticky;
     left: 0;
-    top: 85px;
+    top: 110px;
     
 }
 
@@ -23,9 +23,18 @@
     flex-direction: column;
 }
 
+.gender h4 {
+    margin-bottom: 1rem;
+}
+
+.category h4 {
+    margin: 1rem 0;
+}
+
 .category {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .sort-holder select {

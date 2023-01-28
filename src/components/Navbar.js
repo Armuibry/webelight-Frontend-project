@@ -3,12 +3,14 @@ import { searchActions } from "../store/filterslice"
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { userAction } from '../store/userSlice'
+import { cartActions } from '../store/cartSlice'
 import './NavBar.css'
 import { IoMdContact } from 'react-icons/io'
 
 function Navbar() {
   const dispatch = useDispatch()
   const cartItem = useSelector(state => state.cartState.cartItems)
+  const userdata = useSelector(state => state.userState.user)
 
   const productStatus = useSelector(state => state.productActions);
   // const user = useSelector(state => state.userState.user);
@@ -19,18 +21,20 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleCart = () => {
-    if (cartItem.length > 0) {
-      navigate("shopping-cart")
-    } else {
-      alert("Please add item in the cart to view cart");
+    if (user) {
+      if (cartItem.length > 0) {
+        navigate("shopping-cart")
+      } else {
+        alert("Please add item in the cart to view cart");
+      }
+    }else{
+      alert("Please Login")
     }
   }
-
   let user = JSON.parse(window.localStorage.getItem('user'))
-
   useEffect(() => {
+  }, [userdata, user, cartItem])
 
-  }, [])
 
   const handleSearch = (e) => {
     const value = e.target.value.toLowerCase();
@@ -46,6 +50,13 @@ function Navbar() {
     dispatch(updateSearch(searchData));
   }
 
+  const handleUser = async () => {
+    window.localStorage.removeItem('user');
+    window.localStorage.removeItem('userCart')
+    dispatch(cartActions.deleteCart([]))
+    dispatch(userAction.updateUser(false))
+  }
+
   return (
     <nav>
       <div className="icon-holder">
@@ -58,8 +69,10 @@ function Navbar() {
       </div>
       <input type="text" onChange={handleSearch} placeholder='Search for products, brands and more' />
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        {user !== null && <h3 style={{marginRight:"0.5rem"}}>{user.firstName}</h3>}
-        <IoMdContact size={31} onClick={() => navigate('/signin')} />
+        {user !== null && <h3 style={{ marginRight: "0.5rem" }}>{user.firstName}</h3>}
+        {
+          user ? (<h4 className='logout' onClick={handleUser}>logout</h4>) : (<IoMdContact size={31} onClick={() => navigate('/signin')} />)
+        }
 
       </div>
       <div className="cart-holder" onClick={handleCart}>

@@ -26,6 +26,10 @@ export const cartSlice = createSlice({
         },
         updateFromLocal: (state,action) =>{
             state.cartItems = action.payload
+        },
+
+        deleteCart:(state,action)=>{
+            state.cartItems = action.payload
         }
     }
 })

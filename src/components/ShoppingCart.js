@@ -19,9 +19,12 @@ function ShoppingCart() {
 
     console.log(filterData);
 
-
+const user = window.localStorage.getItem('user');
     return (
-        <div className='shopping-cart'>
+        <>
+            {
+                user?(
+                    <div className='shopping-cart'>
             <h1>Checkout Page</h1>
             <div className="cart-wrap">
                 <h3>Shopping Cart</h3>
@@ -74,6 +77,10 @@ function ShoppingCart() {
 
             </div>
         </div>
+                ):(<div><h1>You Are not authorised to view this page please Login</h1></div>)
+            }
+        </>
+        
     )
 }
 

@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import ShoppingCart from './ShoppingCart';
 import FormDetails from './FormDetails';
 import { cartActions } from '../store/cartSlice';
+import PaymentPage from './PaymentPage';
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path='/confirm-order' element={<FormDetails />} />
           <Route path='/signin' element={<SignIn/>} />
           <Route path='/signup' element={<SignUp/>} />
+          <Route path='/payment' element={<PaymentPage/>} />
 
 
 

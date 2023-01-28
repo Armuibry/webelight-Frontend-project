@@ -72,3 +72,15 @@ nav input {
     margin-left: 20px;
     margin-top: -5px;
 }
+
+.logout {
+    background-color: rgba(0, 0, 0, 0.068);
+    padding: 0.25rem 1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(189, 187, 187);
+    color: #0004ff;
+    stroke: #ff0000;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
