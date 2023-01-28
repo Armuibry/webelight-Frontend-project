@@ -1,0 +1,62 @@
+.signUp-container{
+    width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp-child{
+    width: 40%;
+    padding: 20px;
+    background-color: white; 
+}
+.signUp-title{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+.signUp-form{
+    display: flex;
+    flex-wrap: wrap;  
+}
+.signUp-form input{
+    flex: 1;
+min-width: 40%;
+margin: 20px 10px 0px 0px;
+padding: 10px;
+}
+.signUp-agree{
+    font-size: 12px;
+margin: 20px 0px ;
+}
+.signUp-btn{
+    width: 40%;
+border: none;
+padding: 15px 20px;
+cursor: pointer;
+color: white;
+background: teal;
+}
+.signUp-btn:hover{
+box-shadow: 4px 2px 4px black;
+
+}
+@media only screen and (max-width: 380px) {
+    .signUp-child {
+        width: 75%;
+    }
+  }
+
+
+
+
+
+
+

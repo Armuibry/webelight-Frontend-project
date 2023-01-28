@@ -1,0 +1,91 @@
+.product-modal {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    position: fixed;
+    top: 150px;
+    left: 30%;
+    background-color: #000000;
+    align-items: center;
+    margin: auto;
+    z-index: 1;
+    color: #ffffff;
+    border-radius: 25px;
+}
+.crossbtn {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.crossbtn span {
+    display: block;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.cross {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.cross .img img {
+    object-fit: contain;
+    width: 120px;
+}
+
+.cross .img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    row-gap: 5px;
+    margin-left: 0px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 0;
+}
+
+.details p {
+    color: red;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.details button {
+    margin-top: 30%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.size button {
+    border: 1px solid rgb(202, 202, 202);
+    margin: 5px;
+    margin-left: 0px;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+
+}
+

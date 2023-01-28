@@ -1,0 +1,45 @@
+.indiv-tile-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indiv-tile-holder img {
+    object-fit: contain;
+    width: 12rem;
+}
+
+.indiv-tile-holder p , i, h3{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.indiv-tile-holder i{
+    font-size: 1rem;
+}
+
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.price p {
+    margin: 0px 10px 0px 10px;
+    color: red;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.price strike {
+    font-size: 12px;
+}
+.card {
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
