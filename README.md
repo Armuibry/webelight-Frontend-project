@@ -1,3 +1,8 @@
+# visite website through link:
+
+[click here](https://webeproject-16472.web.app/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -38,12 +43,12 @@ This is a ecommerce front demo project where below text Stacks are used.
 
 ## `Routes for Frontend`
 
-Home - https://webelight-58d58.web.app/  
-Signin - https://webelight-58d58.web.app/signin
-Signup - https://webelight-58d58.web.app/signup
-cart - https://webelight-58d58.web.app/shopping-cart
-Order Confirm - https://webelight-58d58.web.app/confirm-order
-Payment - https://webelight-58d58.web.app/payment
+Home - https://webeproject-16472.web.app/  
+Signin - https://webeproject-16472.web.app/signin
+Signup - https://webeproject-16472.web.app/signup
+cart - https://webeproject-16472.web.app/shopping-cart
+Order Confirm - https://webeproject-16472.web.app/confirm-order
+Payment - https://webeproject-16472.web.app/payment
 
 
 ##### All routes are protected you have to signin or signup first to test all the routes.
