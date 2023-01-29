@@ -1,5 +1,5 @@
 # visite website through link:
-
+### Go to website link 
 [click here](https://webeproject-16472.web.app/)
 
 
@@ -34,7 +34,7 @@ Your app is ready to be deployed!
 
 # ``Basic Tech Stacks`
 
-This is a ecommerce front demo project where below text Stacks are used.
+This is a ecommerce front demo project where below tech Stacks are used.
 1. React
 2. react-router-dom
 3. stripe.js and react-stripejs
